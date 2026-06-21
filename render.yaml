@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: cap-pro-server
+    runtime: node
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: STRIPE_SECRET_KEY
+        sync: false
